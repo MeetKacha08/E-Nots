@@ -1,0 +1,31 @@
+/* SearchBar.css */
+
+.search-bar-container {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.search-bar-input {
+  width: 100%;
+  padding: 14px 20px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  font-size: 1rem;
+  color: #0f172a;
+  background-color: #ffffff;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+  font-family: inherit;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.search-bar-input::placeholder {
+  color: #94a3b8;
+}
+
+/* Adds a beautiful indigo glow effect when the user clicks inside to type */
+.search-bar-input:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 4px #e0e7ff;
+}

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("E-Nots_API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2740e27717d56c254844bec56b6ff8d86abadb34")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+442d597e9e016a5cb4a90e224ce7b281fe477f17")]
 [assembly: System.Reflection.AssemblyProductAttribute("E-Nots_API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("E-Nots_API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

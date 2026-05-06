@@ -1,0 +1,55 @@
+/* NotesList.css */
+
+.notes-list-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.notes-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.notes-list-create-btn {
+  padding: 10px 15px;
+  background-color: #28a745;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.notes-list-create-btn:hover {
+  background-color: #218838;
+}
+
+.notes-list-error {
+  color: #cc0000;
+  background-color: #ffe6e6;
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid #fecaca;
+  margin-bottom: 20px;
+}
+
+.notes-list-empty {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  margin-top: 20px;
+  background-color: #fafafa;
+}
+
+.notes-list-grid {
+  /* Using auto-fill so it creates multiple columns on large screens! */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}

@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// ✅ Updated paths to match your exact folder structure
+import NotesList from './Components/NotesList/NotesList';
+import NoteForm from './Components/NoteForm/NoteForm'; 
+import './index.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="app-container">
+        <header style={{ textAlign: 'center', padding: '20px', backgroundColor: '#333', color: 'white' }}>
+          <h1 style={{ margin: 0 }}>Notes Management System</h1>
+        </header>
+        
+        <main>
+          <Routes>
+            <Route path="/" element={<NotesList />} />
+            <Route path="/create" element={<NoteForm />} /> 
+            <Route path="/edit/:id" element={<NoteForm />} /> 
+          </Routes>
+        </main>
+      </div>
+    </Router>
   );
 }
 
